@@ -107,7 +107,7 @@ async function fetchStats(
 
   let res = await retryer(fetcher, { 
     login: username, 
-    start_time: `${new Date().getFullYear()}-01-01T00:00:00.000Z`,
+    start_time: `${new Date(2000, 0).getFullYear()}-01-01T00:00:00.000Z`,
   });
 
   if (res.data.errors) {
